@@ -1,0 +1,32 @@
+{
+  "_설명": "AEO 모니터링 질문 패널. brand_aliases·competitors·questions 세 가지를 내 브랜드에 맞게 바꾸세요. 나머지는 그대로 둬도 됩니다.",
+  "brand_aliases": [
+    "우리브랜드",
+    "WoorieBrand"
+  ],
+  "brand_aliases_weak": [],
+  "brand_confirm": [],
+  "brand_exclude": [],
+  "competitors": {
+    "경쟁사A": ["경쟁사A 별칭"],
+    "경쟁사B": ["경쟁사B 별칭"]
+  },
+  "engines": [
+    "openai",
+    "gemini",
+    "perplexity",
+    "claude"
+  ],
+  "runs_per_question": 3,
+  "models": {
+    "openai": "gpt-4o-mini",
+    "gemini": "gemini-2.5-flash",
+    "perplexity": "sonar",
+    "claude": "claude-haiku-4-5-20251001"
+  },
+  "questions": [
+    {"id": "q01", "text": "[대상]에게 추천할 만한 [제품·서비스]는?", "tier": "니치"},
+    {"id": "q02", "text": "[지역]에서 [제품·서비스] 잘하는 곳 어디야?", "tier": "니치"},
+    {"id": "q03", "text": "[제품·서비스] 고를 때 무엇을 봐야 해?", "tier": "일반"}
+  ]
+}
